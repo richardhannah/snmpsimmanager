@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.richard.snmpsimmanager"
+    },
+    "jhipsterVersion": "6.5.1",
+    "applicationType": "monolith",
+    "baseName": "snmpsimmanager",
+    "packageName": "com.richard.snmpsimmanager",
+    "packageFolder": "com/richard/snmpsimmanager",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NzI5MmJiYjEzMGJiZTM2Y2YyODVjNzYxMjAyMTE2NDczZWM3M2NhY2I4NGE0YTVlNTZmY2JkNmZkMzlhMzZkMWRjZGVhMjgyZTY0NzJjZmIxMjcwZDgwYWQ1NzYyNjk5NTI5M2RjMmM5NTVmYTY0MDk3NGEwYTEzM2M1MGVkZjE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
