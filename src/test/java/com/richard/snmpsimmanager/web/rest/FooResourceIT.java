@@ -9,6 +9,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 /**
  * Test class for the FooResource REST controller.
@@ -31,11 +32,33 @@ public class FooResourceIT {
     }
 
     /**
-     * Test hello
+     * Test test
      */
     @Test
-    public void testHello() throws Exception {
-        restMockMvc.perform(get("/api/foo/hello"))
+    public void testTest() throws Exception {
+        restMockMvc.perform(get("/api/foo/test"))
+            .andExpect(status().isOk());
+    }
+
+    /**
+     * Test test
+     */
+    @Test
+    public void testGetSnmpRec() throws Exception {
+        restMockMvc.perform(get("/api/foo/snmprec/public"))
+            .andExpect(status().isOk());
+    }
+
+    /**
+     * Test test
+     */
+    @Test
+    public void testpostSnmpRec() throws Exception {
+
+        String postContent = "some post content";
+
+        restMockMvc.perform(post("/api/foo/snmprec/bum").contentType("text/html")
+            .content(postContent))
             .andExpect(status().isOk());
     }
 }
